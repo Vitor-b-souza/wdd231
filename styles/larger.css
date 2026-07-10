@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Larger screens (min-width: 700px)
+   ========================================================================== */
+@media screen and (min-width: 700px) {
+
+    .hamburger { display: none; }
+
+    #primary-nav ul {
+        max-height: none;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    #primary-nav li a {
+        border-bottom: none;
+    }
+
+    .intro-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .student-photo img {
+        max-height: 420px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-buttons {
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

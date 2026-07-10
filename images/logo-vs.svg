@@ -1,0 +1,18 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Logo Vitor Souza</title>
+  <circle cx="60" cy="60" r="56" fill="#f2ead9" stroke="#2b2118" stroke-width="3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#b5502e" stroke-width="2"/>
+  <g stroke="#8a3c22" stroke-width="2" stroke-linecap="round">
+    <line x1="60" y1="8" x2="60" y2="16"/>
+    <line x1="60" y1="104" x2="60" y2="112"/>
+    <line x1="8" y1="60" x2="16" y2="60"/>
+    <line x1="104" y1="60" x2="112" y2="60"/>
+    <line x1="23" y1="23" x2="29" y2="29"/>
+    <line x1="91" y1="91" x2="97" y2="97"/>
+    <line x1="23" y1="97" x2="29" y2="91"/>
+    <line x1="91" y1="29" x2="97" y2="23"/>
+  </g>
+  <text x="60" y="76" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="46" font-weight="700" fill="#2b2118" letter-spacing="-2">VS</text>
+  <rect x="34" y="82" width="52" height="3" rx="1.5" fill="#b5502e"/>
+</svg>

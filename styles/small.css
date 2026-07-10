@@ -1,0 +1,343 @@
+/* ==========================================================================
+   Tokens
+   ========================================================================== */
+:root {
+    --color-bg: #f2ead9;
+    --color-surface: #fffaf0;
+    --color-surface-alt: #e8ddc3;
+    --color-text: #2b2118;
+    --color-text-muted: #5a4a3a;
+    --color-border: #c9b28b;
+    --color-primary: #b5502e;
+    --color-primary-dark: #8a3c22;
+    --color-secondary: #6b7a4f;
+    --color-secondary-dark: #4f5c39;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter", system-ui, sans-serif;
+
+    --radius: 6px;
+    --max-width: 1100px;
+}
+
+/* ==========================================================================
+   Reset-ish basics
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.55;
+}
+
+h1, h2 {
+    font-family: var(--font-display);
+    color: var(--color-text);
+    margin: 0 0 0.5em;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.05rem; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--color-primary-dark); }
+
+button { font-family: var(--font-body); cursor: pointer; }
+
+:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-surface);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo { border-radius: 50%; }
+
+.site-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    background: none;
+    border: 2px solid var(--color-text);
+    border-radius: var(--radius);
+    width: 44px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: var(--color-text);
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+   Navigation (mobile: collapsible vertical list)
+   ========================================================================== */
+#primary-nav {
+    background-color: var(--color-text);
+}
+
+#primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+
+#primary-nav.open ul {
+    max-height: 300px;
+}
+
+#primary-nav li a {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+#primary-nav li a[aria-current="page"] {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+#primary-nav li a:hover,
+#primary-nav li a:focus-visible {
+    background-color: var(--color-primary-dark);
+    color: #fff;
+}
+
+/* ==========================================================================
+   Main layout (mobile: single column)
+   ========================================================================== */
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.25rem 1rem 3rem;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.about-me, .student-photo {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+}
+
+.about-me h2, .student-photo h2 {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    padding: 0.5rem 0.9rem;
+    margin: -1.25rem -1.25rem 1rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    text-align: center;
+}
+
+.student-photo img {
+    border: 3px solid var(--color-border);
+    border-radius: var(--radius);
+    margin: 0 auto;
+    max-height: 340px;
+    width: auto;
+}
+
+/* ==========================================================================
+   Courses section
+   ========================================================================== */
+.courses h2 {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    padding: 0.6rem 0.9rem;
+    border-radius: var(--radius);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.filter-btn {
+    flex: 1;
+    padding: 0.6rem 0.5rem;
+    background-color: var(--color-surface-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-weight: 600;
+    color: var(--color-text);
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.filter-btn:hover,
+.filter-btn:focus-visible {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.filter-btn.active {
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    border-color: var(--color-primary-dark);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course-card {
+    position: relative;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1rem 1rem 1.1rem;
+    overflow: hidden;
+}
+
+.course-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.4rem;
+}
+
+.course-card__code {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.course-card__credits {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.course-card__title {
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+}
+
+.course-card__desc {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0 0 0.5rem;
+}
+
+.course-card__tech {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.course-card--completed {
+    border-color: var(--color-secondary);
+    background-color: #f4f6ef;
+}
+
+/* Signature element: certificate-style stamp on completed courses */
+.stamp {
+    position: absolute;
+    top: 10px;
+    right: -28px;
+    width: 120px;
+    transform: rotate(28deg);
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0;
+    border: 2px dashed rgba(255,255,255,0.7);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.credit-total {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1.25rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.socials a {
+    color: var(--color-bg);
+    background-color: var(--color-primary-dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease;
+}
+
+.socials a:hover,
+.socials a:focus-visible {
+    background-color: var(--color-secondary);
+}
+
+footer p {
+    margin: 0.2rem 0;
+    font-size: 0.85rem;
+}
