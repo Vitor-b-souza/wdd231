@@ -1,0 +1,5 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="30" fill="#8a3c22"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#f2ead9" stroke-width="3"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#f2ead9">FS</text>
+</svg>

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Sabor da Terra Café",
+        "address": "Av. Getúlio Vargas, 450, Feira de Santana, BA",
+        "phone": "(75) 3221-4455",
+        "url": "https://www.sabordaterracafe.example.com",
+        "image": "sabor-da-terra.svg",
+        "membership": 3,
+        "category": "Café & Bakery",
+        "tagline": "Local coffee roasted daily, straight from Bahia's farms."
+    },
+    {
+        "name": "Feira Tech Solutions",
+        "address": "Rua Senhor dos Passos, 120, Feira de Santana, BA",
+        "phone": "(75) 3222-8890",
+        "url": "https://www.feiratech.example.com",
+        "image": "feira-tech.svg",
+        "membership": 3,
+        "category": "Technology & IT Services",
+        "tagline": "Web development, IT support, and digital solutions for local businesses."
+    },
+    {
+        "name": "Artesanato Bahia Viva",
+        "address": "Praça Dr. Jackson Costa, 78, Feira de Santana, BA",
+        "phone": "(75) 3223-1102",
+        "url": "https://www.bahiaviva.example.com",
+        "image": "bahia-viva.svg",
+        "membership": 2,
+        "category": "Handicrafts & Gifts",
+        "tagline": "Handmade crafts celebrating Bahian culture and tradition."
+    },
+    {
+        "name": "Contabil Feira Assessoria",
+        "address": "Av. Eduardo Fróes da Mota, 900, Feira de Santana, BA",
+        "phone": "(75) 3224-6673",
+        "url": "https://www.contabilfeira.example.com",
+        "image": "contabil-feira.svg",
+        "membership": 2,
+        "category": "Accounting & Business Services",
+        "tagline": "Accounting and tax support for small and growing businesses."
+    },
+    {
+        "name": "Construtora Sertão Forte",
+        "address": "Rua Visconde do Rio Branco, 340, Feira de Santana, BA",
+        "phone": "(75) 3225-9981",
+        "url": "https://www.sertaoforte.example.com",
+        "image": "sertao-forte.svg",
+        "membership": 3,
+        "category": "Construction & Engineering",
+        "tagline": "Building homes and commercial spaces across the region."
+    },
+    {
+        "name": "Moda Feira Boutique",
+        "address": "Shopping Boulevard, Loja 22, Feira de Santana, BA",
+        "phone": "(75) 3226-4432",
+        "url": "https://www.modafeira.example.com",
+        "image": "moda-feira.svg",
+        "membership": 1,
+        "category": "Fashion & Retail",
+        "tagline": "Contemporary fashion for men and women."
+    },
+    {
+        "name": "Sabor Sertanejo Restaurante",
+        "address": "Av. Presidente Dutra, 610, Feira de Santana, BA",
+        "phone": "(75) 3227-7754",
+        "url": "https://www.saborsertanejo.example.com",
+        "image": "sabor-sertanejo.svg",
+        "membership": 2,
+        "category": "Restaurant",
+        "tagline": "Traditional Northeastern Brazilian cuisine made with local ingredients."
+    },
+    {
+        "name": "AgroFeira Distribuidora",
+        "address": "Rodovia BR-116, Km 5, Feira de Santana, BA",
+        "phone": "(75) 3228-3320",
+        "url": "https://www.agrofeira.example.com",
+        "image": "agrofeira.svg",
+        "membership": 1,
+        "category": "Agriculture & Distribution",
+        "tagline": "Connecting local farmers to markets across Bahia."
+    }
+]

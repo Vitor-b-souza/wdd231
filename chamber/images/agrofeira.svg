@@ -1,0 +1,6 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AgroFeira Distribuidora logo">
+  <rect width="300" height="200" fill="#b5502e"/>
+  <path d="M150 145 V80" stroke="#f2ead9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 100 C130 90 115 70 120 55 C140 60 150 80 150 100Z" fill="#f2ead9"/>
+  <path d="M150 100 C170 90 185 70 180 55 C160 60 150 80 150 100Z" fill="#f2ead9"/>
+</svg>

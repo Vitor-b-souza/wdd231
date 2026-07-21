@@ -1,0 +1,8 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sabor da Terra Café logo">
+  <rect width="300" height="200" fill="#8a3c22"/>
+  <circle cx="150" cy="95" r="42" fill="#f2ead9"/>
+  <path d="M120 90h60v20a30 30 0 0 1-60 0z" fill="#8a3c22"/>
+  <path d="M182 95h14a12 12 0 0 1 0 24h-10" fill="none" stroke="#8a3c22" stroke-width="6"/>
+  <line x1="128" y1="80" x2="128" y2="70" stroke="#8a3c22" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="78" x2="150" y2="68" stroke="#8a3c22" stroke-width="4" stroke-linecap="round"/>
+</svg>

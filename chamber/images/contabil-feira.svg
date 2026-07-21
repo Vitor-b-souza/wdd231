@@ -1,0 +1,13 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contabil Feira Assessoria logo">
+  <rect width="300" height="200" fill="#2b2118"/>
+  <rect x="105" y="60" width="90" height="80" rx="6" fill="#f2ead9"/>
+  <g fill="#2b2118">
+    <rect x="118" y="75" width="16" height="16"/>
+    <rect x="142" y="75" width="16" height="16"/>
+    <rect x="166" y="75" width="16" height="16"/>
+    <rect x="118" y="99" width="16" height="16"/>
+    <rect x="142" y="99" width="16" height="16"/>
+    <rect x="166" y="99" width="16" height="16"/>
+    <rect x="118" y="123" width="64" height="10"/>
+  </g>
+</svg>

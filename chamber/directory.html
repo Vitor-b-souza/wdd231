@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feira de Santana Chamber of Commerce | Home</title>
-    <meta name="description" content="Home page of the Feira de Santana Chamber of Commerce website, currently under development.">
+    <title>Feira de Santana Chamber of Commerce | Directory</title>
+    <meta name="description" content="Browse the member directory of the Feira de Santana Chamber of Commerce, featuring local businesses across food, technology, retail, and services.">
     <meta name="author" content="Vitor Souza">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Feira de Santana Chamber of Commerce | Directory">
+    <meta property="og:description" content="Discover local businesses that are members of the Feira de Santana Chamber of Commerce.">
+    <meta property="og:image" content="https://vitor-b-souza.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://vitor-b-souza.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,18 +38,30 @@
             <span></span><span></span><span></span>
         </button>
     </header>
+
     <nav id="primary-nav">
         <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="directory.html" aria-current="page">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>Home</h1>
-        <p>This page will be developed in an upcoming week of the course.</p>
+        <h1>Business Directory</h1>
+
+        <div class="directory-controls">
+            <p id="member-count" class="member-count"></p>
+            <div class="view-toggle" role="group" aria-label="Directory display options">
+                <button type="button" id="grid-view-btn" class="view-btn active" aria-pressed="true">Grid</button>
+                <button type="button" id="list-view-btn" class="view-btn" aria-pressed="false">List</button>
+            </div>
+        </div>
+
+        <div id="member-container"></div>
     </main>
+
     <footer>
         <div class="contact-info">
             <p><strong>Feira de Santana Chamber of Commerce</strong></p>

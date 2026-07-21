@@ -1,0 +1,5 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Moda Feira Boutique logo">
+  <rect width="300" height="200" fill="#8a3c22"/>
+  <path d="M150 60 L120 85 L135 90 L135 145 L165 145 L165 90 L180 85 Z" fill="#f2ead9"/>
+  <circle cx="150" cy="65" r="8" fill="none" stroke="#f2ead9" stroke-width="4"/>
+</svg>
