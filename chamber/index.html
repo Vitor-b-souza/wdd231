@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feira de Santana Chamber of Commerce | Home</title>
-    <meta name="description" content="Home page of the Feira de Santana Chamber of Commerce website, currently under development.">
+    <meta name="description" content="Welcome to the Feira de Santana Chamber of Commerce: local events, weather, member spotlights, and how to join our growing business community.">
     <meta name="author" content="Vitor Souza">
+
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <meta property="og:title" content="Feira de Santana Chamber of Commerce">
+    <meta property="og:description" content="Connecting local businesses in Feira de Santana. Discover events, weather, and featured member spotlights.">
+    <meta property="og:image" content="https://vitor-b-souza.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://vitor-b-souza.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,6 +37,7 @@
             <span></span><span></span><span></span>
         </button>
     </header>
+
     <nav id="primary-nav">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
@@ -31,10 +46,52 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>Home</h1>
-        <p>This page will be developed in an upcoming week of the course.</p>
+        <section class="hero">
+            <img src="images/hero.svg" alt="Illustration of the Feira de Santana marketplace at sunset" class="hero-image">
+            <div class="hero-overlay">
+                <h1>Feira de Santana Chamber of Commerce</h1>
+                <p>Connecting local businesses. Building community. Growing together.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Current Events</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <p class="event-card__date">Aug 14, 2026</p>
+                    <p class="event-card__title">Networking Breakfast</p>
+                    <p>Monthly meetup for chamber members to connect over coffee and pão de queijo.</p>
+                </article>
+                <article class="event-card">
+                    <p class="event-card__date">Aug 29, 2026</p>
+                    <p class="event-card__title">Small Business Workshop</p>
+                    <p>Free workshop on digital marketing for local entrepreneurs.</p>
+                </article>
+                <article class="event-card">
+                    <p class="event-card__date">Sep 12, 2026</p>
+                    <p class="event-card__title">Feira de Santana Trade Fair</p>
+                    <p>Annual fair showcasing member businesses to the whole community.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather in Feira de Santana</h2>
+            <div class="weather-grid">
+                <div id="current-weather" class="current-weather"></div>
+                <div id="forecast" class="forecast-grid"></div>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid"></div>
+        </section>
     </main>
+
     <footer>
         <div class="contact-info">
             <p><strong>Feira de Santana Chamber of Commerce</strong></p>

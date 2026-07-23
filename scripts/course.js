@@ -20,7 +20,7 @@ function displayCourses(courseList) {
             </div>
             <p class="course-card__title">${course.title}</p>
             <p class="course-card__desc">${course.description}</p>
-            <p class="course-card__tech">Tecnologias: ${course.technology.join(', ')}</p>
+            <p class="course-card__tech">Technologies: ${course.technology.join(', ')}</p>
         `;
 
         courseContainer.appendChild(card);
