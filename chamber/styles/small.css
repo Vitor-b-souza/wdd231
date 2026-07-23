@@ -290,17 +290,17 @@ footer .dev-info p { margin: 0.2rem 0; font-size: 0.8rem; opacity: 0.85; }
     justify-content: center;
     text-align: center;
     padding: 1rem;
-    background: linear-gradient(to bottom, rgba(43,33,24,0.35), rgba(43,33,24,0.65));
+    background-color: rgba(43, 33, 24, 0.72);
 }
 
 .hero-overlay h1 {
-    color: #fff;
+    color: #ffffff;
     font-size: 1.5rem;
     margin-bottom: 0.4rem;
 }
 
 .hero-overlay p {
-    color: var(--color-bg);
+    color: #ffffff;
     margin: 0 0 1rem;
     font-size: 0.95rem;
     max-width: 32ch;
